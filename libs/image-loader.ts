@@ -1,1 +1,1 @@
-export const imageLoader = ({ src }: { src: string }): string => src
+export const imageLoader = ({ src }: { src: string }): string => `./${src.replace(/^\//, '')}`

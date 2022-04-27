@@ -9,6 +9,7 @@ module.exports = {
   images: {
     loader: 'custom'
   },
+  assetPrefix: './',
   env: {
     domain: 'bewertung.wohnbau-moser.com',
     // eslint-disable-next-line no-secrets/no-secrets

@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://bewertung.wohnbau-moser.com",
   "scripts": {
-    "build": "next build && next export -o docs/",
+    "build": "next build && next export -o docs/ && touch docs/.nojekyll && echo 'bewertung.wohnbau-moser.com' > docs/CNAME",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"

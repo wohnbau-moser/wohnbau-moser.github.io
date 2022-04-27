@@ -1,0 +1,15 @@
+# dependencies
+pnpm-lock.yaml
+/node_modules
+
+# debug
+.pnpm-debug.log*
+
+# production
+/.next
+
+# typescript
+*.tsbuildinfo
+
+# misc
+.DS_Store

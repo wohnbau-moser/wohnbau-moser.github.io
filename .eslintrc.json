@@ -1,0 +1,140 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": false,
+    "commonjs": false,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["woke", "no-secrets"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:node/recommended",
+    "plugin:jsdoc/recommended",
+    "plugin:regexp/recommended",
+    "plugin:security/recommended",
+    "plugin:promise/recommended",
+    "plugin:anti-trojan-source/recommended",
+    "plugin:array-func/all",
+    "plugin:eslint-comments/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "import/no-default-export": "error",
+    "import/prefer-default-export": "off",
+    "import/order": "off",
+    "node/no-missing-import": "off",
+    "node/no-unpublished-import": "off",
+    "woke/all": "error",
+    "no-secrets/no-secrets": "error",
+    "etc/no-commented-out-code": "warn",
+    "etc/prefer-less-than": "warn",
+    "jsdoc/require-jsdoc": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": [
+      "error",
+      { "unnamedComponents": "arrow-function", "namedComponents": "arrow-function" }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./",
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": {}
+        }
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "next/core-web-vitals",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        "plugin:sonarjs/recommended",
+        "plugin:unicorn/recommended",
+        "plugin:node/recommended",
+        "plugin:jsdoc/recommended",
+        "plugin:regexp/recommended",
+        "plugin:security/recommended",
+        "plugin:promise/recommended",
+        "plugin:anti-trojan-source/recommended",
+        "plugin:array-func/all",
+        "plugin:eslint-comments/recommended",
+        "plugin:etc/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "no-console": "warn",
+        "import/no-default-export": "error",
+        "import/prefer-default-export": "off",
+        "import/order": "off",
+        "node/no-missing-import": "off",
+        "node/no-unpublished-import": "off",
+        "woke/all": "error",
+        "no-secrets/no-secrets": "error",
+        "etc/no-commented-out-code": "warn",
+        "etc/prefer-less-than": "warn",
+        "etc/throw-error": "error",
+        "etc/prefer-interface": "error",
+        "jsdoc/require-jsdoc": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/function-component-definition": [
+          "error",
+          { "unnamedComponents": "arrow-function", "namedComponents": "arrow-function" }
+        ]
+      },
+      "overrides": [
+        {
+          "files": ["pages/**/*.tsx"],
+          "rules": {
+            "import/no-default-export": "off",
+            "import/prefer-default-export": "error"
+          }
+        }
+      ]
+    },
+    {
+      "files": ["**/*.json"],
+      "extends": ["plugin:jsonc/recommended-with-json"],
+      "rules": {
+        "woke/all": "error",
+        "no-secrets/no-secrets": "error"
+      }
+    },
+    {
+      "files": ["**/*.jsonc"],
+      "extends": ["plugin:jsonc/recommended-with-jsonc"],
+      "rules": {
+        "woke/all": "error",
+        "no-secrets/no-secrets": "error"
+      }
+    },
+    {
+      "files": ["**/*.json5"],
+      "extends": ["plugin:jsonc/recommended-with-json5"],
+      "rules": {
+        "woke/all": "error",
+        "no-secrets/no-secrets": "error"
+      }
+    }
+  ]
+}

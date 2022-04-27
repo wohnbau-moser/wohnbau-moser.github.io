@@ -2,6 +2,7 @@
   "name": "wohnbau-moser.github.io",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://bewertung.wohnbau-moser.com",
   "scripts": {
     "build": "next build && next export -o docs/",
     "dev": "next dev",

@@ -2,9 +2,9 @@
   "root": true,
   "env": {
     "browser": true,
-    "node": false,
-    "commonjs": false,
-    "es6": true
+    "node": true,
+    "commonjs": true,
+    "es6": false
   },
   "parserOptions": {
     "ecmaVersion": 2021,
@@ -50,6 +50,12 @@
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
+      "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": false,
+        "es6": true
+      },
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": "./tsconfig.json",
@@ -101,7 +107,8 @@
         "react/function-component-definition": [
           "error",
           { "unnamedComponents": "arrow-function", "namedComponents": "arrow-function" }
-        ]
+        ],
+        "node/no-unsupported-features/es-syntax": ["error", { "ignores": ["modules"] }]
       },
       "overrides": [
         {

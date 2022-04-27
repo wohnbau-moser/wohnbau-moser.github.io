@@ -4,9 +4,14 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   eslint: {
-    dirs: ['components']
+    dirs: ['components', 'libs']
+  },
+  images: {
+    loader: 'custom'
   },
   env: {
-    title: 'Moser Wohnbau &amp; Immobilien GmbH'
+    domain: 'bewertung.wohnbau-moser.com',
+    // eslint-disable-next-line no-secrets/no-secrets
+    iwaLeadKey: 'FJV692!UM33!ZQY738?PM86$'
   }
 }

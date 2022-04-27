@@ -14,8 +14,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-		"baseUrl": ".",
+    "baseUrl": ".",
     "paths": {
+      "@libs/*": ["libs/*"],
       "@styles/*": ["styles/*"]
     }
   },

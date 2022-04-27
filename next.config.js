@@ -1,7 +1,6 @@
-const nextTranslate = require('next-translate')
-
+// eslint-disable-next-line jsdoc/valid-types
 /** @type {import('next').NextConfig} */
-module.exports = nextTranslate({
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   eslint: {
@@ -10,4 +9,4 @@ module.exports = nextTranslate({
   env: {
     title: 'Moser Wohnbau &amp; Immobilien GmbH'
   }
-})
+}

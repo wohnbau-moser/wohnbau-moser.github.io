@@ -34,7 +34,6 @@ specifiers:
   eslint-plugin-woke: 1.0.1
   import-sort-style-eslint: 6.0.0
   next: 12.1.5
-  next-translate: 1.4.0
   postcss: 8.4.12
   postcss-flexbugs-fixes: 5.0.2
   postcss-preset-env: 7.4.4
@@ -50,7 +49,6 @@ specifiers:
 
 dependencies:
   next: 12.1.5_008f76c92927c3d3636842a829086498
-  next-translate: 1.4.0_next@12.1.5+react@18.1.0
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
 
@@ -3378,16 +3376,6 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
-
-  /next-translate/1.4.0_next@12.1.5+react@18.1.0:
-    resolution: {integrity: sha512-FWheoN83fWTTfZ2g+a77GBcXRDVfSDP45iA0+G5wRZYE3xPYMy/6X+1I5j+ouczoJ2JI54vH59W/veZ1tZDRGQ==}
-    peerDependencies:
-      next: '>= 10.0.0'
-      react: '>= 16.8.0'
-    dependencies:
-      next: 12.1.5_008f76c92927c3d3636842a829086498
-      react: 18.1.0
-    dev: false
 
   /next/12.1.5_008f76c92927c3d3636842a829086498:
     resolution: {integrity: sha512-YGHDpyfgCfnT5GZObsKepmRnne7Kzp7nGrac07dikhutWQug7hHg85/+sPJ4ZW5Q2pDkb+n0FnmLkmd44htIJQ==}
